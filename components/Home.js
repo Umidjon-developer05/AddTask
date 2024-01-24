@@ -25,7 +25,7 @@ const Home = () => {
           <div className="grid grid-cols-6 p-5 gap-y-2">
   
             <div>
-              <Image src={session?.user?.image} className=" max-h-16 rounded-full" />
+              <Image src={session?.user?.image} className=" max-h-16 rounded-full" alt='assa' />
             </div>
   
             <div className="col-span-5 md:col-span-4 ml-4">
