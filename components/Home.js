@@ -1,5 +1,6 @@
 import axios from 'axios';
 import { useSession } from 'next-auth/react';
+import Image from 'next/image';
 import React, { useEffect, useState } from 'react'
 
 const Home = () => {
@@ -24,7 +25,7 @@ const Home = () => {
           <div className="grid grid-cols-6 p-5 gap-y-2">
   
             <div>
-              <img src={session?.user?.image} className=" max-h-16 rounded-full" />
+              <Image src={session?.user?.image} className=" max-h-16 rounded-full" />
             </div>
   
             <div className="col-span-5 md:col-span-4 ml-4">
